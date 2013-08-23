@@ -60,10 +60,10 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 		mFragments[0] = getSupportFragmentManager().findFragmentById(R.id.fragment_home);
 		mFragments[1] = getSupportFragmentManager().findFragmentById(R.id.fragment_search);
 		mFragments[2] = getSupportFragmentManager().findFragmentById(R.id.fragment_settings);
-		mFragments[3] = getSupportFragmentManager().findFragmentById(R.id.fragment_settings);
+		mFragments[3] = getSupportFragmentManager().findFragmentById(R.id.fragment_fourth);
 		
 		getSupportFragmentManager().beginTransaction().hide(mFragments[0])
-				.hide(mFragments[1]).hide(mFragments[2]).show(mFragments[whichIsDefault]).commit();
+				.hide(mFragments[1]).hide(mFragments[2]).hide(mFragments[3]).show(mFragments[whichIsDefault]).commit();
 
 		FragmentIndicator mIndicator = (FragmentIndicator) findViewById(R.id.indicator);
 		FragmentIndicator.setIndicator(whichIsDefault);
@@ -74,7 +74,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 				
 				getSupportFragmentManager().beginTransaction()
 						.hide(mFragments[0]).hide(mFragments[1])
-						.hide(mFragments[2]).show(mFragments[which]).commit();
+						.hide(mFragments[2]).hide(mFragments[3]).show(mFragments[which]).commit();
 			}
 		});
 	}

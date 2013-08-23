@@ -25,6 +25,13 @@
         android:layout_width="fill_parent"
         android:layout_height="0dip"
         android:layout_weight="1" />
+    
+    <fragment
+        android:name="com.example.smenubmenu.fragment.FourthFragment"
+        android:id="@+id/fragment_fourth"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
  
     <com.example.smenubmenu.view.FragmentIndicator
         android:id="@+id/indicator"

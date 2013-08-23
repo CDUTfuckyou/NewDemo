@@ -135,21 +135,22 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int title_btn_pressed=0x7f02001c;
     }
     public static final class id {
-        public static final int action_settings=0x7f060018;
+        public static final int action_settings=0x7f060019;
+        public static final int fragment_fourth=0x7f06000a;
         public static final int fragment_home=0x7f060007;
         public static final int fragment_search=0x7f060008;
-        public static final int fragment_search_text=0x7f06000b;
+        public static final int fragment_search_text=0x7f06000c;
         public static final int fragment_settings=0x7f060009;
-        public static final int fragment_setttings_text=0x7f06000d;
-        public static final int home_listView=0x7f06000c;
-        public static final int indicator=0x7f06000a;
-        public static final int item1=0x7f06000f;
-        public static final int item2=0x7f060010;
-        public static final int item3=0x7f060011;
-        public static final int item4=0x7f060012;
-        public static final int item5=0x7f060013;
-        public static final int item6=0x7f060014;
-        public static final int left_btn=0x7f060015;
+        public static final int fragment_setttings_text=0x7f06000e;
+        public static final int home_listView=0x7f06000d;
+        public static final int indicator=0x7f06000b;
+        public static final int item1=0x7f060010;
+        public static final int item2=0x7f060011;
+        public static final int item3=0x7f060012;
+        public static final int item4=0x7f060013;
+        public static final int item5=0x7f060014;
+        public static final int item6=0x7f060015;
+        public static final int left_btn=0x7f060016;
         /**  Used with View#setTag(int) to specify a position for the active view. 
          */
         public static final int mdActiveViewPosition=0x7f060005;
@@ -168,10 +169,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         /**  The ID of the menu container. 
          */
         public static final int md__menu=0x7f060003;
-        public static final int menu_frame=0x7f06000e;
-        public static final int right_btn=0x7f060017;
+        public static final int menu_frame=0x7f06000f;
+        public static final int right_btn=0x7f060018;
         public static final int title=0x7f060006;
-        public static final int title_text=0x7f060016;
+        public static final int title_text=0x7f060017;
     }
     public static final class layout {
         public static final int activity_help=0x7f030000;

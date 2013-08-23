@@ -129,6 +129,13 @@ public class FragmentIndicator extends LinearLayout implements OnClickListener {
 			prevText = (TextView) mIndicators[mCurIndicator].findViewWithTag(TAG_TEXT_2);
 			prevText.setTextColor(COLOR_UNSELECT);
 			break;
+			
+		case 3:
+			prevIcon =(ImageView) mIndicators[mCurIndicator].findViewWithTag(TAG_ICON_3);
+			prevIcon.setImageResource(R.drawable.ic_settings_normal);
+			prevText = (TextView) mIndicators[mCurIndicator].findViewWithTag(TAG_TEXT_3);
+			prevText.setTextColor(COLOR_UNSELECT);
+			break;
 		}
 		
 		// update current status.
@@ -152,6 +159,13 @@ public class FragmentIndicator extends LinearLayout implements OnClickListener {
 			currIcon =(ImageView) mIndicators[which].findViewWithTag(TAG_ICON_2);
 			currIcon.setImageResource(R.drawable.ic_settings_focused);
 			currText = (TextView) mIndicators[which].findViewWithTag(TAG_TEXT_2);
+			currText.setTextColor(COLOR_SELECT);
+			break;
+			
+		case 3:
+			currIcon =(ImageView) mIndicators[which].findViewWithTag(TAG_ICON_3);
+			currIcon.setImageResource(R.drawable.ic_settings_focused);
+			currText = (TextView) mIndicators[which].findViewWithTag(TAG_TEXT_3);
 			currText.setTextColor(COLOR_SELECT);
 			break;
 		}
@@ -187,6 +201,13 @@ public class FragmentIndicator extends LinearLayout implements OnClickListener {
 				if (mCurIndicator != 2) {
 					mOnIndicateListener.onIndicate(v, 2);
 					setIndicator(2);
+				}
+				break;
+				
+			case 3:
+				if (mCurIndicator != 3) {
+					mOnIndicateListener.onIndicate(v, 3);
+					setIndicator(3);
 				}
 				break;
 			default:
